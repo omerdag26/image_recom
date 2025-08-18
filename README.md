@@ -19,11 +19,11 @@ if FAISS missing:   pip install faiss-cpu
 Apple Silicon TF:   pip install tensorflow-macos
 
 
-##1) Build the image DB
+## 1) Build the image DB
 
 python populate_db.py /path/to/images --db images.db
 
-##2) Build features + ANN
+## 2) Build features + ANN
 
 ### Deep (2048-D)
 python build.py --method deep  --db images.db --chunk 4096
